@@ -1,29 +1,29 @@
 <template>
 	<nav class="md:items-center justify-center gap-8 lg:gap-10 flex-col md:flex-row inline-flex">
-		<a
-			:href="link.href"
+		<NuxtLink
+			:to="link.href"
 		
 			v-for="(link, index) in navLinks"
 			class="nav_link nav_link_dash pb-1 text-primary w-fit "
 			:key="link.name"
 			:class="index >= 4 ? 'md:hidden' : ''"
-			>{{ link.name }}</a
+			>{{ link.name }}</NuxtLink
 		>
 	</nav>
 </template>
 
 <script setup>
 	const navLinks = [
-		{ name: "About Us", href: "#about" },
-		{ name: "Mobile Apps", href: "#mobile" },
-		{ name: "Features", href: "#feature" },
+		{ name: "About Us", href: "/" },
+		{ name: "Mobile Apps", href: "/mobile" },
+		{ name: "Features", href: "/feature" },
 		{ name: "Terms & Conditions", href: "/terms" },
 	];
 
 </script>
 
 <style scoped>
-	.active {
+	.router-link-active {
 		@apply text-[#BF151E] border-b-2 border-[#BF151E] before:hidden;
 	}
 

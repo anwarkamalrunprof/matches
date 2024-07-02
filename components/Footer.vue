@@ -15,7 +15,7 @@
 					'lg:col-span-2': index === 2,
 				}"
 				v-for="(links, index) in footerLinks">
-				<div class="text-gray-300 text-[17px] font-bold">{{ links.title }}</div>
+				<div class="text-gray-300 text-[17px] font-bold">{{ $t(links.title) }}</div>
 				<ul class="text-gray-300 text-sm font-normal">
 					<li
 						v-for="link in links.links"
@@ -25,27 +25,24 @@
 							:src="link.img"
 							alt=""
 							class="shrink-0 size-4" />
-						<NuxtLink :to="link.href">{{ link.name }}</NuxtLink>
+						<NuxtLink :to="link.href">{{ $t(link.name) }}</NuxtLink>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="text-center text-neutral-50 text-xs font-light mt-20 container tracking-wide">
-			Copyright © 2024 ElMatches (UK). All rights reserved. No part of ElMatches (UK) may be
-			published, broadcast, rewritten, or redistributed without the prior written authority of
-			ElMatches (UK).
+			{{ $t("footer.copyRight") }}
 		</div>
-		<a href="tel:+"></a>
 	</footer>
 </template>
 
 <script setup>
 	const footerLinks = [
 		{
-			title: "Headquarters (UK)",
+			title: "col1.title",
 			links: [
 				{
-					name: "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom. Company No: 13725570",
+					name: "col1.links.1.name",
 					href: "",
 					img: "/carbon_location.svg",
 				},
@@ -54,10 +51,10 @@
 			],
 		},
 		{
-			title: "Tech Arm (Egypt)",
+			title: "col2.title",
 			links: [
 				{
-					name: "378 Abou Quer, Mustafa Kamel WA Bolkli Sidi Gaber, Alexandria Governorate, Egypt.",
+					name: "col2.links.1.name",
 					href: "",
 					img: "/carbon_location.svg",
 				},
@@ -66,11 +63,11 @@
 			],
 		},
 		{
-			title: "Privacy Settings",
+			title: "col3.title",
 			links: [
-				{ name: "About US", href: "/" },
-				{ name: "Terms & Conditions", href: "/" },
-				{ name: "Privacy Policy", href: "/" },
+				{ name: "col3.links.1.name", href: "/" },
+				{ name: "col3.links.2.name", href: "/" },
+				{ name: "col3.links.3.name", href: "/" },
 			],
 		},
 	];

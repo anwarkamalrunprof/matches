@@ -4,55 +4,50 @@
 			<div
 				class="container grid md:grid-cols-2 lg:grid-cols-5 z-50 text-white items-center h-full gap-10 py-8">
 				<div class="lg:col-span-3 text-white">
-					<h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">By The Fans, For The Fans</h1>
-					<h3 class="lg:text-lg mt-4">ELMATCHES - A New Era of Football Fan Engagement..</h3>
+					<h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">{{$t('title')}}</h1>
+					<h3 class="lg:text-xl md:text-lg mt-4">{{$t('title2')}}</h3>
 					<p class="mt-5 block max-md:text-xs !leading-relaxed">
-						With a deep passion for the beautiful game, ElMatches is a social football gaming
-						entertainment platform powered by cutting-edge blockchain technology. We bridge
-						the gap between fans and the action on the field, empowering you to elevate your
-						matchday experience and be part of a vibrant community where every voice matters.
-						ElMatches: Your game, your voice, your community.
+					{{$t('description')}}
 					</p>
 					<p class="mt-4 max-md:text-xs !leading-relaxed">
 						<NuxtLink
 							to="/"
 							class="text-yellow-500 underline font-semibold tracking-wider"
-							>Learn More</NuxtLink
+							>{{$t('LearnMore')}}</NuxtLink
 						>
-						about ElMatches and unlock exclusive access to experience football like never
-						before. Don't miss out - Join our waiting list now!
+					{{$t('description2')}} , <span>{{$t('JoinNow')}}</span>
 					</p>
 				</div>
 				<div class="lg:col-span-2 bg-white/10 p-5 backdrop-blur-[2px] rounded-lg">
 					<div class="text-white text-xl md:text-2xl font-semibold mb-8 tracking-wide">
-						Join The Waiting List
+						{{$t('JoinNow2')}}
 					</div>
 					<div class="grid gap-5">
 						<div class="grid gap-2">
-							<label for="Name">Name</label>
+							<label for="Name">{{$t('Name')}}</label>
 							<input
 								type="text"
 								name=""
 								id=""
-								placeholder="Enter Your Name" />
+								:placeholder="$t('nameplaceholder')" />
 						</div>
 						<div class="grid gap-2">
-							<label for="Email">Email</label>
+							<label for="Email">{{$t('Email')}}</label>
 							<input
 								type="email"
 								name="email"
 								id=""
-								placeholder="Enter Your Email" />
+								:placeholder="$t('EnterYourEmail')" />
 						</div>
 						<div class="grid gap-2 min-w-0">
-							<label for="">Mobile Number <span class="text-red-600">*</span> </label>
+							<label for="">{{$t('mobile')}}<span class="text-red-600">*</span> </label>
 							<BasePhoneNumberInput />
 						
 						</div>
 						<button
 							class="btn__primary w-fit"
 							@click="isJoined = true">
-							Join Now
+							{{$t('JoinNowButton')}}
 						</button>
 					</div>
 				</div>
