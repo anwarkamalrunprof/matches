@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+	padding-block: 2rem;
+}
+
+.cent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn__primary {
+	@apply  px-5 py-2 md:px-6  md:py-2.5  bg-neutral-50 rounded-md justify-center items-center gap-2.5 inline-flex text-primary font-semibold hover:bg-primary hover:text-neutral-50 duration-200 ;
+}
+
+
+
+
+
+
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #030B40;
+	border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #030b40db;
+}
+
+/* hide scroll bar  */
+.hide__scroll::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+	display: none !important;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "build:deploy": "env-cmd -f .env npm run build && firebase use el-matches-f9949 && firebase target:apply hosting el-matches-f9949 el-matches && firebase deploy --only functions:server,hosting:el-matches",
+    "deploy": "firebase use el-matches-f9949 && firebase target:apply hosting el-matches-f9949 el-matches  && firebase deploy --only functions:server,hosting:el-matches "
+  },
+  "dependencies": {
+    "@firebase/auth": "^1.7.4",
+    "firebase-admin": "^12.2.0",
+    "firebase-functions": "^5.0.1",
+    "libphonenumber-js": "^1.11.4",
+    "primevue": "^3.52.0"
+  },
+  "devDependencies": {
+    "@e-chan1007/nuxt-firebase": "^1.1.5",
+    "@nuxtjs/i18n": "^8.3.1",
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "firebase": "^10.12.2",
+    "nuxt": "^3.12.2",
+    "nuxt-primevue": "^3.0.0",
+    "nuxt-vuefire": "^1.0.2"
+  }
+}

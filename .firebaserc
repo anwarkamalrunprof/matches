@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "production": "el-matches-f9949"
+  },
+  "targets": {
+    "el-matches-f9949": {
+      "hosting": {
+        "el-matches-f9949": [
+          "el-matches",
+          "el-matches-f9949"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
