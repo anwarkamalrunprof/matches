@@ -47,12 +47,12 @@ export default defineNuxtConfig({
 			},
 		],
 	],
-	nitro: {
-		preset: "firebase",
-		firebase: {
-			gen: 2,
-		},
-	},
+	// nitro: {
+	// 	preset: "firebase",
+	// 	firebase: {
+	// 		gen: 2,
+	// 	},
+	// },
 	firebase: {
 		configEnvPrefix: "FIREBASE_",
 	},
