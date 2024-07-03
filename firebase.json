@@ -1,15 +1,22 @@
 {
   "functions": {
     "source": ".output/server",
-    "entryPoint": "index.mjs",
     "region": "europe-west3",
-    "memory": "8GB"
+    "memory": "8GB",
+    "runtime": "nodejs18"
   },
-  "hosting": [
-    {
-      "site": "el-matches-f9949",
-      "public": ".output/public",
-      "cleanUrls": true
-    }
-  ]
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
 }

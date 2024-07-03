@@ -1,69 +1,68 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-	app: {
-		head: {
-			charset: "utf-8",
-			viewport: "width=device-width, initial-scale=1",
-			meta: [
-				{ name: "description", content: "Elmatches" },
-				{ name: "robots", content: "index, follow" },
-				{ name: "theme-color", content: "#317EFB" },
-			],
-			link: [{ rel: "icon", type: "image/x-icon", href: "/logo.svg" }],
-			title: "ELMATCHES",
-		},
+ app: {
+					head: {
+									charset: "utf-8",
+									viewport: "width=device-width, initial-scale=1",
+									meta: [
+													{ name: "description", content: "Elmatches" },
+													{ name: "robots", content: "index, follow" },
+													{ name: "theme-color", content: "#317EFB" },
+									],
+									link: [{ rel: "icon", type: "image/x-icon", href: "/logo.svg" }],
+									title: "ELMATCHES",
+					},
 	},
-	devtools: { enabled: true },
-	modules: [
-		"@nuxtjs/tailwindcss",
-		"nuxt-primevue",
-		"@e-chan1007/nuxt-firebase",
-		[
-			"@nuxtjs/i18n",
-			{
-				vueI18n: "./locales/i18n.config.ts",
-				defaultLocale: "ar",
-				strategy: "prefix_and_default",
-				detectBrowserLanguage: {
-					useCookie: true,
-				},
-				locales: [
-					{
-						code: "en",
-						iso: "en-US",
-						name: "English",
-						file: "./locales/en.json",
-						direction: "ltr",
-					},
-					{
-						code: "ar",
-						iso: "ar",
-						name: "Arabic",
-						file: "./locales/ar.json",
-						direction: "rtl",
-					},
-				],
-			},
-		],
+
+ devtools: { enabled: true },
+
+ modules: [
+					"@nuxtjs/tailwindcss",
+					"nuxt-primevue",
+					"@e-chan1007/nuxt-firebase",
+					[
+									"@nuxtjs/i18n",
+									{
+													vueI18n: "./locales/i18n.config.ts",
+													defaultLocale: "ar",
+													strategy: "prefix_and_default",
+													detectBrowserLanguage: {
+																	useCookie: true,
+													},
+													locales: [
+																	{
+																					code: "en",
+																					iso: "en-US",
+																					name: "English",
+																					file: "./locales/en.json",
+																					direction: "ltr",
+																	},
+																	{
+																					code: "ar",
+																					iso: "ar",
+																					name: "Arabic",
+																					file: "./locales/ar.json",
+																					direction: "rtl",
+																	},
+													],
+									},
+					],
 	],
-	nitro: {
-<<<<<<< Updated upstream
-		preset: "firebase",
-		firebase: {
-			gen: 2,
-		},
-=======
-		firebase: {
-			nodeVersion: "20",
-			gen: 2,
-		},
-		preset: "firebase",
->>>>>>> Stashed changes
+
+ nitro: {
+					firebase: {
+									nodeVersion: "20",
+									gen: 2,
+					},
+					preset: "firebase",
 	},
-	firebase: {
-		configEnvPrefix: "FIREBASE_",
-	},
+
+ // firebase: {
+	// 	configEnvPrefix: "FIREBASE_",
+	// },
 	imports: { dirs: ["./composables"] },
-	css: ["./assets/css/style.css", "primevue/resources/themes/aura-light-green/theme.css"],
+
+ css: ["./assets/css/style.css", "primevue/resources/themes/aura-light-green/theme.css"],
+ compatibilityDate: "2024-07-03",
 });

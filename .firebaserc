@@ -1,17 +1,5 @@
 {
-  "projects": {},
-  "targets": {
-    "el-matches-f9949": {
-      "hosting": {
-        "el-matches-f9949": [
-          "el-matches",
-          "el-matches,functions:server",
-          "el-matches-f9949",
-          "functions:server"
-        ]
-      }
-    }
-  },
-  "etags": {},
-  "dataconnectEmulatorConfig": {}
+  "projects": {
+    "default": "el-matches-staging-eebaf"
+  }
 }
