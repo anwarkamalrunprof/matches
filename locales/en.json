@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
   "title": "By The Fans, For The Fans",
   "title2": "ELMATCHES - A New Era of Football Fan Engagement..",
   "description": "\tWith a deep passion for the beautiful game, ElMatches is a social football gaming \t\t\t\t\t\tentertainment platform powered by cutting-edge blockchain technology. We bridge \t\t\t\t\t\tthe gap between fans and the action on the field, empowering you to elevate your \t\t\t\t\t\tmatchday experience and be part of a vibrant community where every voice matters. \t\t\t\t\t\tElMatches: Your game, your voice, your community.",
@@ -71,3 +72,81 @@
     ]
   }
 }
+=======
+	"1": " About Us",
+	"2": "Mobile Apps",
+	"3": "Features",
+	"4": "Contact Us",
+	"title": "By The Fans, For The Fans",
+	"title2": "ELMATCHES - A New Era of Football Fan Engagement..",
+	"description": "\tWith a deep passion for the beautiful game, ElMatches is a social football gaming \t\t\t\t\t\tentertainment platform powered by cutting-edge blockchain technology. We bridge \t\t\t\t\t\tthe gap between fans and the action on the field, empowering you to elevate your \t\t\t\t\t\tmatchday experience and be part of a vibrant community where every voice matters. \t\t\t\t\t\tElMatches: Your game, your voice, your community.",
+	"LearnMore": "Learn More",
+	"description2": "\tabout ElMatches and unlock exclusive access to experience football like never \t\t\t\t\t\tbefore. Don't miss out - Join our waiting list now!",
+	"JoinNow": "Join our waiting list now!",
+	"JoinNow2": "Join The Waiting List",
+	"Name": "Name",
+	"nameplaceholder": "Enter Your Name",
+	"Email": "Email",
+	"EnterYourEmail": "Enter Your Email",
+	"mobile": "Mobile Number ",
+	"JoinNowButton": "Join Now",
+	"downloadApp.title": "Fuel Your Football Passion - Anywhere, Anytime!",
+	"downloadApp.subtitle": "Stay tuned for the launch of ElMatches mobile apps (coming soon!).",
+	"downloadApp.p": "Wherever you are, right from your phone, you'll have the ultimate gameday \t\t\t\t\t\tcompanion that puts you at the heart of the action. Download ElMatches and \t\t\t\t\t\texperience live fan ratings, real-time coach connection,<br /> \t\t\t\t\t\tpersonalized predictions, immersive VR experiences, and celebrating goals with \t\t\t\t\t\tmillions of fellow fans in real-time, all on the go.",
+	"Discover": "Discover Our Innovative Features!",
+	"ob1": {
+		"titleBold": "Live Scores",
+		"titleNormal": "Never Miss a Beat..",
+		"description": "Stay on top of the action with ELMATCHES Live Scores. Get real-time updates, detailed match stats, and in-game insights - all conveniently accessible on your mobile device."
+	},
+	"ob2": {
+		"titleBold": "Live Fan Ratings",
+		"titleNormal": "Your Voice Matters..",
+		"description": "Experience the thrill of real-time engagement as you rate players, coaches, and referees during live matches. See how your ratings stack up against millions of fans worldwide in real-time, shaping the narrative of the game as it happens."
+	},
+	"ob3": {
+		"titleBold": "Coach Connection",
+		"titleNormal": "Engage in Real-Time..",
+		"description": "Connect directly with your team's coach and millions of fellow fans. Share strategies seamlessly during live matches. Elevate your matchday experience with unique, interactive engagement at the heart of the game."
+	},
+	"ob4": {
+		"titleBold": "ElMATCHES-VR",
+		"titleNormal": "Be Live There..",
+		"description": "Close the physical distance between sports fans and live stadium events with ElMatches VR. Virtually participate in sports matches, concerts, and other live events as if you were actually present in the stadium, arena, or venue."
+	},
+	"footer.copyRight": "Copyright © 2024 ElMatches (UK). All rights reserved. No part of ElMatches (UK) may be published, broadcast, rewritten, or redistributed without the prior written authority of ElMatches (UK).",
+	"col1":
+	{
+		"title": "Headquarters (UK)",
+		"links": [
+			{
+				"name": "71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom. Company No: 13725570",
+				"href": ""
+			},
+			{ "name": "+44 7551 789020", "href": "tel:+44 7551 789020" },
+			{ "name": " Admin@ElMatches.com", "href": "mailto:" }
+		]
+	},
+	"col2":
+	{
+		"title": "Tech Arm (Egypt)",
+		"links": [
+			{
+				"name": "378 Abou Quer, Mustafa Kamel WA Bolkli Sidi Gaber, Alexandria Governorate, Egypt.",
+				"href": ""
+			},
+			{ "name": "www.runprof.com", "href": "www.runprof.com" },
+			{ "name": "+2 01017657590", "href": "tel:+201017657590" }
+		]
+	},
+	"col3":
+	{
+		"title": "Privacy Settings",
+		"links": [
+			{ "name": "About US", "href": "/" },
+			{ "name": "Terms & Conditions", "href": "/" },
+			{ "name": "Privacy Policy", "href": "/" }
+		]
+	}
+}
+>>>>>>> Stashed changes

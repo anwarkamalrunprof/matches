@@ -24,7 +24,7 @@ export default defineNuxtConfig({
 			{
 				vueI18n: "./locales/i18n.config.ts",
 				defaultLocale: "ar",
-				strategy: "prefix",
+				strategy: "prefix_and_default",
 				detectBrowserLanguage: {
 					useCookie: true,
 				},
@@ -48,10 +48,18 @@ export default defineNuxtConfig({
 		],
 	],
 	nitro: {
+<<<<<<< Updated upstream
 		preset: "firebase",
 		firebase: {
 			gen: 2,
 		},
+=======
+		firebase: {
+			nodeVersion: "20",
+			gen: 2,
+		},
+		preset: "firebase",
+>>>>>>> Stashed changes
 	},
 	firebase: {
 		configEnvPrefix: "FIREBASE_",
